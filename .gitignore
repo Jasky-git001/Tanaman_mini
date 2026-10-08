@@ -1,0 +1,23 @@
+# Environment & credentials
+.env
+.env.local
+.env.*.local
+
+# Config lokal dengan password
+config/database.local.php
+config/midtrans.local.php
+
+# Upload user
+uploads/*
+!uploads/.gitkeep
+
+# Log
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
