@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ecfdf5" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#ecfdf5" stop-opacity="0.8"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <rect width="400" height="400" fill="url(#bgGrad)" rx="24"/>
+  <!-- Table surface -->
+  <ellipse cx="200" cy="350" rx="140" ry="18" fill="#e2e8f0" opacity="0.7"/>
+  <g filter="url(#shadow)">
+    <!-- Plant Artwork -->
+    
+        <path d="M200 280 Q160 280 140 330" stroke="#16a34a" stroke-width="3" fill="none"/>
+        <path d="M200 280 Q240 280 260 320" stroke="#16a34a" stroke-width="3" fill="none"/>
+        <path d="M200 220 C170 180 160 230 200 260 C240 230 230 180 200 220 Z" fill="#22c55e"/>
+        <path d="M190 230 Q200 240 205 250" stroke="#fef08a" stroke-width="3" fill="none"/>
+        <path d="M140 330 C120 310 110 340 140 360 C170 340 160 310 140 330 Z" fill="#15803d"/>
+        <path d="M260 320 C240 300 230 330 260 350 C290 330 280 300 260 320 Z" fill="#16a34a"/>
+    <!-- Pot -->
+    <path d="M150 280 L160 340 Q200 350 240 340 L250 280 Z" fill="#ffffff"/>
+    <ellipse cx="200" cy="280" rx="50" ry="10" fill="#475569" opacity="0.2"/>
+    <path d="M146 272 Q200 266 254 272 Q200 278 146 272 Z" fill="#ffffff" opacity="0.4"/>
+  </g>
+  <!-- Label Badge -->
+  <rect x="20" y="20" width="360" height="36" rx="8" fill="#ffffff" opacity="0.85"/>
+  <text x="200" y="43" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#1e293b" text-anchor="middle">Sirih Gading Mini Varigata</text>
+</svg>
