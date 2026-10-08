@@ -21,15 +21,19 @@ switch ($period) {
         $periodLabel = 'Kustom (' . date('d/m/Y', strtotime($startDate)) . ' s/d ' . date('d/m/Y', strtotime($endDate)) . ')';
         break;
     case 'day':
-        $whereSql .= " AND DATE(o.tanggal) = CURDATE()";
+        $today = date('Y-m-d');
+        $whereSql .= " AND DATE(o.tanggal) = '$today'";
         $periodLabel = 'Hari Ini (' . date('d-m-Y') . ')';
         break;
     case 'week':
-        $whereSql .= " AND o.tanggal >= DATE_SUB(NOW(), INTERVAL 7 DAY)";
+        $sevenDaysAgo = date('Y-m-d', strtotime('-7 days'));
+        $whereSql .= " AND DATE(o.tanggal) >= '$sevenDaysAgo'";
         $periodLabel = '7 Hari Terakhir';
         break;
     case 'year':
-        $whereSql .= " AND YEAR(o.tanggal) = YEAR(CURDATE())";
+        $firstDayOfYear = date('Y-01-01');
+        $lastDayOfYear = date('Y-12-31');
+        $whereSql .= " AND DATE(o.tanggal) BETWEEN '$firstDayOfYear' AND '$lastDayOfYear'";
         $periodLabel = 'Tahun ' . date('Y');
         break;
     case 'all':
@@ -37,7 +41,9 @@ switch ($period) {
         break;
     case 'month':
     default:
-        $whereSql .= " AND MONTH(o.tanggal) = MONTH(CURDATE()) AND YEAR(o.tanggal) = YEAR(CURDATE())";
+        $firstDayOfMonth = date('Y-m-01');
+        $lastDayOfMonth = date('Y-m-t');
+        $whereSql .= " AND DATE(o.tanggal) BETWEEN '$firstDayOfMonth' AND '$lastDayOfMonth'";
         $periodLabel = 'Bulan Ini (' . date('F Y') . ')';
         break;
 }
