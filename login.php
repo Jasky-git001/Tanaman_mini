@@ -82,14 +82,6 @@ require_once __DIR__ . '/includes/header.php';
             <p class="text-xs text-slate-500 mt-1">Silakan masuk untuk melanjutkan belanja dan checkout.</p>
         </div>
 
-        <!-- Demo Account Helper Card for Testing/Grading -->
-        <div class="mb-6 p-3.5 rounded-2xl bg-brand-50/70 border border-brand-200 text-brand-900 text-xs flex items-start gap-2.5">
-            <i class="fa-solid fa-circle-info text-brand-600 mt-0.5 text-sm flex-shrink-0"></i>
-            <div>
-                <span class="font-bold block">Akun Demo Pengujian Mahasiswa/Dosen:</span>
-                <span>Email: <code>user@gmail.com</code> • Password: <code>user123</code></span>
-            </div>
-        </div>
 
         <!-- Error Message -->
         <?php if (!empty($error)): ?>
@@ -108,7 +100,7 @@ require_once __DIR__ . '/includes/header.php';
                 <label for="email" class="block text-xs font-semibold text-slate-700 mb-1.5">Email Akun</label>
                 <div class="relative">
                     <i class="fa-solid fa-envelope absolute left-3.5 top-3 text-slate-400 text-xs"></i>
-                    <input type="email" id="email" name="email" required value="<?= htmlspecialchars($_POST['email'] ?? '') ?>" placeholder="user@gmail.com" class="w-full pl-9 pr-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500">
+                    <input type="email" id="email" name="email" required value="<?= htmlspecialchars($_POST['email'] ?? '') ?>" placeholder="nama@email.com" class="w-full pl-9 pr-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500">
                 </div>
             </div>
 
@@ -119,7 +111,7 @@ require_once __DIR__ . '/includes/header.php';
                 </div>
                 <div class="relative">
                     <i class="fa-solid fa-lock absolute left-3.5 top-3 text-slate-400 text-xs"></i>
-                    <input type="password" id="password" name="password" required placeholder="user123" class="w-full pl-9 pr-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500">
+                    <input type="password" id="password" name="password" required placeholder="Masukkan password Anda" class="w-full pl-9 pr-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500">
                 </div>
             </div>
 

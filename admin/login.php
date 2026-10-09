@@ -88,17 +88,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <p class="text-xs text-slate-400 mt-1">Portal Pengelolaan Toko Tanaman Hias Mini</p>
         </div>
 
-        <!-- Demo Account Helper Card for Testing/Grading -->
-        <div class="mb-6 p-3.5 rounded-2xl bg-slate-800/80 border border-slate-700 text-xs text-slate-300">
-            <div class="flex items-center gap-2 font-bold text-brand-400 mb-1">
-                <i class="fa-solid fa-key"></i> Kredensial Akun Admin Default:
-            </div>
-            <p class="text-[11px] text-slate-400">
-                Email: <code class="text-white font-mono bg-slate-900 px-1.5 py-0.5 rounded">admin@gmail.com</code> • 
-                Password: <code class="text-white font-mono bg-slate-900 px-1.5 py-0.5 rounded">admin123</code>
-            </p>
-        </div>
-
         <!-- Error Message -->
         <?php if (!empty($error)): ?>
             <div class="mb-6 p-3.5 rounded-xl bg-red-950/60 border border-red-800 text-red-300 text-xs flex items-center gap-2">
@@ -110,10 +99,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!-- Form -->
         <form action="login.php" method="POST" class="space-y-4">
             <div>
-                <label for="username" class="block text-xs font-semibold text-slate-300 mb-1.5">Email Admin</label>
+                <label for="username" class="block text-xs font-semibold text-slate-300 mb-1.5">Username / Email Admin</label>
                 <div class="relative">
                     <i class="fa-solid fa-user absolute left-3.5 top-3 text-slate-500 text-xs"></i>
-                    <input type="text" id="username" name="username" required value="<?= htmlspecialchars($_POST['username'] ?? '') ?>" placeholder="admin@gmail.com" class="w-full pl-9 pr-3 py-2.5 rounded-xl bg-slate-800/90 border border-slate-700 text-sm text-white focus:outline-none focus:border-brand-500">
+                    <input type="text" id="username" name="username" required value="<?= htmlspecialchars($_POST['username'] ?? '') ?>" placeholder="Masukkan username admin" class="w-full pl-9 pr-3 py-2.5 rounded-xl bg-slate-800/90 border border-slate-700 text-sm text-white focus:outline-none focus:border-brand-500">
                 </div>
             </div>
 
@@ -121,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <label for="password" class="block text-xs font-semibold text-slate-300 mb-1.5">Password</label>
                 <div class="relative">
                     <i class="fa-solid fa-lock absolute left-3.5 top-3 text-slate-500 text-xs"></i>
-                    <input type="password" id="password" name="password" required placeholder="admin123" class="w-full pl-9 pr-3 py-2.5 rounded-xl bg-slate-800/90 border border-slate-700 text-sm text-white focus:outline-none focus:border-brand-500">
+                    <input type="password" id="password" name="password" required placeholder="Masukkan password admin" class="w-full pl-9 pr-3 py-2.5 rounded-xl bg-slate-800/90 border border-slate-700 text-sm text-white focus:outline-none focus:border-brand-500">
                 </div>
             </div>
 
