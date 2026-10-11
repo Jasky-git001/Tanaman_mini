@@ -73,7 +73,7 @@ try {
                         <p class="text-xs text-slate-500 font-medium">Garansi Segar</p>
                     </div>
                     <div>
-                        <p class="text-2xl sm:text-3xl font-extrabold text-brand-800">5/5</p>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-brand-800">4.9/5</p>
                         <p class="text-xs text-slate-500 font-medium">Rating Pelanggan</p>
                     </div>
                 </div>

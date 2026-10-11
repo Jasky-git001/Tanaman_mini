@@ -121,7 +121,7 @@ require_once __DIR__ . '/includes/header.php';
                 <label for="nama" class="block text-xs font-semibold text-slate-700 mb-1.5">Nama Lengkap</label>
                 <div class="relative">
                     <i class="fa-solid fa-user absolute left-3.5 top-3 text-slate-400 text-xs"></i>
-                    <input type="text" id="nama" name="nama" required value="<?= htmlspecialchars($formData['nama']) ?>" placeholder="Contoh: Budi Santoso" class="w-full pl-9 pr-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500">
+                    <input type="text" id="nama" name="nama" required value="<?= htmlspecialchars($formData['nama']) ?>" placeholder="Masukkan nama lengkap disini" class="w-full pl-9 pr-3 py-2.5 rounded-xl border border-slate-200 text-sm focus:outline-none focus:border-brand-500 focus:ring-1 focus:ring-brand-500">
                 </div>
             </div>
 

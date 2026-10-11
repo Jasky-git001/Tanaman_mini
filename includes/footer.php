@@ -73,7 +73,7 @@ $base_path = $base_path ?? '';
                         </li>
                         <li class="flex items-center gap-3">
                             <i class="fa-solid fa-envelope text-brand-400"></i>
-                            <span>halo@tanamanmini.local</span>
+                            <span>tanamanhiasmini@gmail.com</span>
                         </li>
                         <li class="flex items-center gap-3">
                             <i class="fa-regular fa-clock text-brand-400"></i>
