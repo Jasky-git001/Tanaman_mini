@@ -65,7 +65,7 @@ try {
                 <!-- Mini Stats Under Hero -->
                 <div class="pt-8 border-t border-slate-200/80 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0 text-center sm:text-left">
                     <div>
-                        <p class="text-2xl sm:text-3xl font-extrabold text-brand-800">50+</p>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-brand-800">10+</p>
                         <p class="text-xs text-slate-500 font-medium">Varian Tanaman</p>
                     </div>
                     <div>
@@ -73,7 +73,7 @@ try {
                         <p class="text-xs text-slate-500 font-medium">Garansi Segar</p>
                     </div>
                     <div>
-                        <p class="text-2xl sm:text-3xl font-extrabold text-brand-800">4.9/5</p>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-brand-800">5/5</p>
                         <p class="text-xs text-slate-500 font-medium">Rating Pelanggan</p>
                     </div>
                 </div>
